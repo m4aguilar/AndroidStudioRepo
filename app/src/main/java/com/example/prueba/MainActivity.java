@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
-        
+
         Button buttonB = (Button) findViewById(R.id.buttonAcceder);
     }
 }
