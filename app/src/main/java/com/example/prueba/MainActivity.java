@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonP = (Button) findViewById(R.id.buttonAcceder);
-        buttonA.setOnClickListener(new View.OnClickListener(){
+        Button buttonPruebas = (Button) findViewById(R.id.buttonPruebas);
+        buttonPruebas.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent= new Intent(v.getContext(), PreguntasActivity.class);
