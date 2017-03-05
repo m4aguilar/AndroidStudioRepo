@@ -9,44 +9,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#81F79F"
+    android:background="@drawable/orientation"
     tools:context="com.example.prueba.MainActivity">
 
     <Button
-        android:text="Exit"
+        android:id="@+id/buttonStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="44dp"
-        android:id="@+id/buttonStart" />
+        android:layout_marginBottom="21dp"
+        android:text="Salir"/>
 
     <Button
-        android:text="Acceder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/buttonAcceder"
-        android:layout_above="@+id/buttonStart"
-        android:layout_alignStart="@+id/buttonStart"
-        android:layout_marginBottom="20dp" />
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/imageView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/buttonAcceder" />
+        android:text="Mapa"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/buttonPruebas"
+        android:layout_alignStart="@+id/buttonStart"/>
 
     <Button
-        android:text="Button"
+        android:id="@+id/buttonPruebas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
-        android:id="@+id/buttonPruebas"
-        android:layout_alignBottom="@+id/buttonStart"
-        android:layout_toStartOf="@+id/buttonStart"
-        android:layout_marginBottom="25dp" />
+        android:layout_marginBottom="29dp"
+        android:text="Preguntas"
+        android:layout_above="@+id/buttonStart"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

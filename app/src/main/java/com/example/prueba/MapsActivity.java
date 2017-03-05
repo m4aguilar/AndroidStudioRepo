@@ -73,6 +73,18 @@ public class MapsActivity extends FragmentActivity implements  OnMapReadyCallbac
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
+        //Para añadir marcadores
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(36.721117, -4.415907))
+                .title("Alcazaba de Málaga"));
+
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(36.721181, -4.416726))
+                .title("Teatro Romano de Málaga"));
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(36.72174 , -4.418437))
+                .title("Museo Picasso de Málaga"));
+
 
         //Initialize Google Play Services
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
